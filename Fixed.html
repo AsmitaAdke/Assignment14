@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <title>Page 1</title>
-</head>
+    <title>Fixed Position</title>
 <style>
     .Heading{
         text-align: center;
@@ -11,14 +12,40 @@
         text-align: center;
     }
     .btn{
+        background-color: rgb(0, 255, 153);
+        color:black;
         position: fixed;
-        right: 20px;
-        top: 120px;
+        right: 100px;
+        top: 550px;
         border-radius: 20px;
         border: 1px solid;
-        padding: 5px;
+        padding: 5px 20px;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .bottom-menus{
+        background-color:#333;
+        position:fixed;
+        bottom:0;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+
+    }
+    .menu-icon{
+        height:30px;
+        background-color: white;
+        padding:3px 10px;
+        border-radius: 20px;
+        margin: 0 5px;
     }
 </style>
+</head>
 <body>
 <div class="Heading2">
     <a href="static.html">Static</a>&nbsp | &nbsp
@@ -27,9 +54,18 @@
     <a href="Sticky.html">Sticky</a>&nbsp | &nbsp
     <a href="Absolute.html">Absolute</a>
 </div><hr>
+<div class="bottom-menus">
+    <img src="./mic.png" class="menu-icon" />
+    <img src="./play.png" class="menu-icon" />
+    <img src="./call.png" class="menu-icon" />
+    <img src="./home.png" class="menu-icon" />
+    <img src="./setting.png" class="menu-icon" />
+    <img src="./airplay.png" class="menu-icon" />
 
+
+</div>
     <h1 class="Heading"><u>Fixed Position</u></h1><br>
-    <button class="btn">Normal Button</button>
+    <button class="btn">Click Me</button>
 
     <p>
         Loren ipsum dolor sit amet consectetur adipisicing elit. Magnam nihil, eos dolor ad commodi consectetur
