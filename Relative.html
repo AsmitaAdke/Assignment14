@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Page 1</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relative Position</title>
+
 <style>
     .Heading{
         text-align: center;
@@ -11,14 +13,17 @@
         text-align: center;
     }
     .btn{
+        background-color: rgb(255, 102, 255);
+        color: black;
         position: relative;
-        top: 50px;
-        left: 100px;
-        border-radius: 10px;
+        top: 150px;
+        left: 50px;
+        border-radius: 20px;
         border: 1px solid;
-        padding: 5px;
+        padding: 5px 20px;
     }
 </style>
+</head>
 <body>
 <div class="Heading2">
     <a href="Static.html">Static</a>&nbsp | &nbsp
@@ -29,7 +34,12 @@
 </div><hr>
 
     <h1 class="Heading"><u>Relative Position</u></h1><br>
-    <button class="btn">New Button</button>
-    <br><b>The relative position is the relative to original position or nearest element.</b>
+    <button class="btn">Click Me</button>
+    <br><b>The relative position is the relative to original position or nearest element.
+        the relative value of the position property allows an element to be positioned relative
+        to its normal position in the document flow, enabling adjustments without affecting the layout
+        of surrounding elements.Setting the top, right, bottom, and left properties of a relatively-positioned 
+        element will cause it to be adjusted away from its normal position. Other content will not be adjusted to 
+        fit into any gap left by the element.</b>
 </body>
 </html>
